@@ -11,7 +11,7 @@
 
 ### Prerequisites
 + Serangann umum pada networks, windows, dan linux
-+ Pran dan tanggung jawab SOC (terutama L1 analyst)
++ Role dan tanggung jawab SOC (terutama L1 analyst)
 
 ## Event and Alerts
 
