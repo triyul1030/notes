@@ -1,15 +1,17 @@
 # SOC L1 Alert Triage
 
-## Objective
-+ Concept of SOC alert
-+ Alert field, statuses, and classification
-+ Perform alert triage as an L1 analyst
-+ Real alert and SOC workflows
-+ SOC simulator and SAL1 certification
+## Introduction
 
-## Prerequisites
-+ Common attack on networks, windows, and linux
-+ SOC roles and duties (especially L1 analyst)
+### Objective
++ Konsep SOC alert
++ Alert field, statuses, dan classification
++ Alert triage sebagai L1 analyst
++ Real alert dan SOC workflows
++ SOC simulator dan SAL1 certification
+
+### Prerequisites
++ Serangann umum pada networks, windows, dan linux
++ Pran dan tanggung jawab SOC (terutama L1 analyst)
 
 ## Event and Alerts
 
