@@ -33,3 +33,13 @@
   | SOAR | Splunk SOAR, Cortex XSOAR | menggabungkan dan mengotomatisasi penanganan alert dari banyak sistem (tim SOC yang lebih besar) 
   | ITSM | Jira, TheHive | mengelola tiket/insiden (bukan analisis alert secara langsung)
 
+### L1 Role in Alert Triage
++ Alert triage, proses kolaboratif tim SOC
++ L1 sebagai garis depan.
+
+| Role | Tanggung Jawab |
+| :--- | :--- |
+| L1 Analyst | yang pertama kali menangani alert; memilah mana yang aman dan mana yang menjadi ancaman; jika ada indikasi bahaya, alert diteruskan ke L2 Analyst |
+| L2 Analyst | melakukan analisis lebih dalam dan penanganannya berdasarkan alert yang diteruskan L1 Analyst |
+| SOC Engineer | memastikan sistem alert menyediakan informasi yang cukup agar mudah dianalisis |
+| SOC Manager | mengawasi kecepatan dan kualitas proses supaya tidak ada serangan yang terlewat | 
