@@ -58,5 +58,15 @@
 | Alert Description | penjelasan detail alert dan cara penanganannya |
 | Alert Fields | data tambahan/teknis terkait kejadian | 
 
+## Alert Prioritisation
++ Proses memilih alert mana yang perlu untuk ditangani terlebih dahulu agar ancaman bisa dideteksi dan ditangani secepat mungkin
++ Alurnya
+  1. Filter alert\
+     Ambil aler yang masih baru dan belum ditangani
+  2. Prioritaskan berdasarkan severity\
+     Mulai dari critical, high, medium, dan low
+  3. Pertimbangkan waktu (time)\
+     Dahulukan alert yang paling lama
+
 ## Reference
 + [https://tryhackme.com/room/socl1alerttriage](https://tryhackme.com/room/socl1alerttriage)
