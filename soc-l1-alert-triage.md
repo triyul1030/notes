@@ -21,3 +21,12 @@
   + SOC analyst lebih efisien, hanya menganalisis alert
 
 + Alert, kunci efisien dan efektivitas dalam monitoring keamanan
+
++ Alert management platforms
+
+  | Solution | Example | Description |
+  | :--- | :--- | :--- |
+  | SIEM | Splunk Enterprise Security, Elastic SIEM | paling lengkap dalam mengumpulkan, menganalisis, dan mengelola alert (pilihan utama) |
+  | EDR/NDR | Microsoft Defender, CrowdStrike Falcon | menghasilkan alert, tidak dijadikan pusat manajemen (sumber data) |
+  | SOAR | Splunk SOAR, Cortex XSOAR | menggabungkan dan mengotomatisasi penanganan alert dari banyak sistem (tim SOC yang lebih besar) 
+  | ITSM | Jira, TheHive | mengelola tiket/insiden (bukan analisis alert secara langsung)
