@@ -14,13 +14,13 @@
 ## Event and Alerts
 
 ### Event to Alerts
-+ Alert, menyaring jutaan log menjadi kejadian mencurigakan atau perlu perhatian
-  + Banyak event terjadi --> dicatat sebagai log
++ Alert, menyaring jutaan log menjadi kejadian mencurigakan yang perlu perhatian. 
+  + Banyak event terjadi (login, process, download, dll) 
+  + dicatat sebagai log
   + Log dikirim ke sistem keamanan (SIEM/EDR)
-  + Sistem menghasilkan alert untuk kejadian mencurigakan
+  + Sistem menganalisis log dan menghasilkan alert untuk kejadian mencurigakan
   + SOC analyst lebih efisien, hanya menganalisis alert
-
-+ Alert, kunci efisien dan efektivitas dalam monitoring keamanan
+  + tanpa alert, analyst harus memeriksa semua log secara manual
 
 + Alert management platforms
 
@@ -30,3 +30,4 @@
   | EDR/NDR | Microsoft Defender, CrowdStrike Falcon | menghasilkan alert, tidak dijadikan pusat manajemen (sumber data) |
   | SOAR | Splunk SOAR, Cortex XSOAR | menggabungkan dan mengotomatisasi penanganan alert dari banyak sistem (tim SOC yang lebih besar) 
   | ITSM | Jira, TheHive | mengelola tiket/insiden (bukan analisis alert secara langsung)
+
