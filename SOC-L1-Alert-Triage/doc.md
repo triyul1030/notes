@@ -44,5 +44,19 @@
 | SOC Engineer | memastikan sistem alert menyediakan informasi yang cukup agar mudah dianalisis |
 | SOC Manager | mengawasi kecepatan dan kualitas proses supaya tidak ada serangan yang terlewat |
 
+## Alert Properties
++ Membantu SOC Analyst memahami, memprioritaskan, dan menangani ancaman (triage) dengan cepat dan tepat
+
+| Property | Description |
+| :--- | :--- |
+| Alert Time | kapan alert dibuat (setelah event terjadi) |
+| Alert Name | ringkasan jenis kejadian/ancaman |
+| Alert Severity | tingkat urgensi (low sampai critical) |
+| Alert Status | status penanganan (baru, sedang diproses, selesai) |
+| Alert Verdict | hasil analisis | (ancaman nyata atau false alarm) |
+| Alert Assignee | siapa analis yang bertanggung jawab |
+| Alert Description | penjelasan detail alert dan cara penanganannya |
+| Alert Fields | data tambahan/teknis terkait kejadian | 
+
 ## Reference
 + [https://tryhackme.com/room/socl1alerttriage](https://tryhackme.com/room/socl1alerttriage)
