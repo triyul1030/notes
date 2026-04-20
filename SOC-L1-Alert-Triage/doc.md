@@ -42,4 +42,7 @@
 | L1 Analyst | yang pertama kali menangani alert; memilah mana yang aman dan mana yang menjadi ancaman; jika ada indikasi bahaya, alert diteruskan ke L2 Analyst |
 | L2 Analyst | melakukan analisis lebih dalam dan penanganannya berdasarkan alert yang diteruskan L1 Analyst |
 | SOC Engineer | memastikan sistem alert menyediakan informasi yang cukup agar mudah dianalisis |
-| SOC Manager | mengawasi kecepatan dan kualitas proses supaya tidak ada serangan yang terlewat | 
+| SOC Manager | mengawasi kecepatan dan kualitas proses supaya tidak ada serangan yang terlewat |
+
+## Reference
++ [https://tryhackme.com/room/socl1alerttriage](https://tryhackme.com/room/socl1alerttriage)
