@@ -62,11 +62,31 @@
 + Proses memilih alert mana yang perlu untuk ditangani terlebih dahulu agar ancaman bisa dideteksi dan ditangani secepat mungkin
 + Alurnya
   1. Filter alert\
-     Ambil aler yang masih baru dan belum ditangani
+     Ambil alert yang masih baru dan belum ditangani
   2. Prioritaskan berdasarkan severity\
      Mulai dari critical, high, medium, dan low
   3. Pertimbangkan waktu (time)\
      Dahulukan alert yang paling lama
+
+## Alert Triage
++ Alert triage, proses terstruktur untuk menganalisis alert dari awal sampai penentuan apakah alert ini ancaman atau tidak.
++ Tahapan:
+  1) Initial Action\
+     a. Mengambil alih alert (assign ke diri sendiri)\
+     b. Mengubah status ke InProgress\
+     c. Memahami detail alert
+  2) Investigasion
+     + Memahami aktivitas dan menganalisis legitimasinya di log SIEM atau EDR
+     + Workbook/playbook/runbook, panduan cara menyelidiki jenis alert -> dikembangkan untuk membantu L1 Analyst
+     + Panduan alternatif (jika tidak ada workbook)
+       1) Memahami siapa yang terancam (user terdampak, hostname, cloud, network, atau website)
+       2) Catat tindakan yang dideskripsikan di alert (login yang mencurigakan, malware, atau phishing)
+       3) Tinjau event terkait (tindakan mencurigakan sesaat setelah atau sebelum alert)
+       4) Gunakan platform threat intelligence atau resource lainnya yang tersedia untuk memverifikasi kesimpulan 
+  3) Final Action
+     1) Putuskan alert mencurigakan yang diselidiki (True Positive)
+     2) Siapkan komentar yang menjelaskan langkah analisis dan alasan verdict
+     3) Kembali ke dashboard dan ubah ke **closed** status
 
 ## Reference
 + [https://tryhackme.com/room/socl1alerttriage](https://tryhackme.com/room/socl1alerttriage)
