@@ -29,5 +29,23 @@
   2. Alert Escalation → meneruskan alert ke L2 jika butuh analisis lebih dalam atau tindakan lanjutan
   3. Communication → berkoordinasi dengan tim lain (misalnya IT atau HR) untuk verifikasi atau informasi tambahan
 
++ Peran L1 berkembang dari sekadar analisis menjadi penghubung penting dalam penanganan insiden melalui laporan, eskalasi, dan komunikasi yang efektif
+
+## Reporting Guide
++ Alert reporting oleh L1 analyst sangat penting, bukan sekadar menentukan True/False Positive, tapi juga untuk mendukung analisis lanjutan dan dokumentasi.
++ Tujuan utama Alert Report:
+  + Provide context for escalation → membantu L2 analyst cepat memahami kasus tanpa mulai dari nol
+  + Save findings for the records → menyimpan konteks penting lebih lama dibanding log SIEM
+  + Improve investigation skills → melatih pemahaman dan kemampuan analisis L1
+
++ Format laporan yang disarankan (Five Ws):
+  + Who → siapa yang terlibat (user, akun, dll)
+  + What → aktivitas atau kejadian yang terjadi
+  + When → waktu kejadian
+  + Where → lokasi/endpoint (device, IP, website)
+  + Why → alasan atau analisis kenapa dianggap ancaman atau tidak
+
++ Report yang baik membuat investigasi lebih cepat, terdokumentasi dengan baik, dan meningkatkan kualitas analisis SOC secara keseluruhan
+
 ## Reference
 + [https://tryhackme.com/room/socl1alertreporting](https://tryhackme.com/room/socl1alertreporting)
