@@ -32,3 +32,6 @@
   + Memahami cara kerja perusahaan secara keseluruhan
 
 + SOC adalah kerja tim, dan sebagai L1 akan membangun pengalaman untuk berkembang ke peran yang lebih advanced di cyber security
+
+## Reference
++ [https://tryhackme.com/room/jrsecanalystintrouxo](https://tryhackme.com/room/jrsecanalystintrouxo)
