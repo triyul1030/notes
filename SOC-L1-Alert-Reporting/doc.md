@@ -67,5 +67,18 @@
 
 + Escalation memastikan alert yang serius atau tidak jelas ditangani oleh level yang lebih ahli agar tidak terjadi kesalahan atau ancaman terlewat
 
+## SOC Communication
++ Dalam kondisi nyata, L1 analyst harus siap menghadapi situasi tak terduga dan tetap berkomunikasi dengan cepat dan tepat, terutama saat kasus kritis.
+
++ Contoh kasus & penanganannya:
+  + Alert critical tapi L2 tidak merespons** → hubungi L2, lalu L3, lalu manager (gunakan emergency contact)
+  + Akun Slack/Teams diduga compromise → jangan hubungi via akun yang terkena, gunakan metode lain (telepon, dll)
+  + Banjir alert dalam waktu singkat → tetap prioritaskan sesuai workflow dan informasikan ke L2
+  + Salah klasifikasi alert (missed threat) → segera lapor ke L2, jangan ditunda
+  + Masalah SIEM (log tidak terbaca/searchable) → tetap investigasi semampunya dan laporkan ke L2 atau SOC engineer
+
++ Intinya:
++ Komunikasi yang cepat, tepat, dan mengikuti prosedur sangat penting untuk mencegah kesalahan dan menangani insiden secara efektif, terutama dalam situasi kritis
+
 ## Reference
 + [https://tryhackme.com/room/socl1alertreporting](https://tryhackme.com/room/socl1alertreporting)
