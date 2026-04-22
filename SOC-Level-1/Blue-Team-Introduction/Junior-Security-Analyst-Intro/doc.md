@@ -33,5 +33,19 @@
 
 + SOC adalah kerja tim, dan sebagai L1 akan membangun pengalaman untuk berkembang ke peran yang lebih advanced di cyber security
 
+## A Day in the Life of a Security Analyst
++ Menjadi Security Analyst (SOC L1) di garis depan pertahanan memang menantang, tapi juga memberikan pengalaman yang menarik dan bermakna.
+
++ Gambaran utamanya:
+  + Harus terus belajar karena ancaman selalu berkembang
+  + Selama shift (±8 jam), bisa menghadapi banyak tickets/alerts
+  + Dituntut untuk menyelesaikan alert dengan cepat dan tepat
+
++ Namun:
+  + Pekerjaan terasa memuaskan saat berhasil menghentikan ancaman nyata
+  + Memberi pemahaman nyata tentang bagaimana serangan siber terjadi di dunia nyata
+
++  Meskipun menantang, peran ini sangat berharga dan menjadi langkah awal untuk berkembang di dunia cyber security
+
 ## Reference
 + [https://tryhackme.com/room/jrsecanalystintrouxo](https://tryhackme.com/room/jrsecanalystintrouxo)
