@@ -24,3 +24,10 @@ Note: If you correctly escalated the alert earlier, just edit the alert and clic
 Then, decide if you need to escalate this alert and move on according to the process.
 After you finish your triage, you should receive a flag, which is your answer!
    **THM{looks_like_webshell_via_old_exchange}**
+
+### SOC Communication
+1. Should you first try to contact your manager in case of a critical threat (Yea/Nay)?\
+   **Nay**
+2. Should you immediately contact your L2 if you think you missed the attack (Yea/Nay)?\
+   **Yea**
+
