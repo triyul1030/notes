@@ -14,3 +14,21 @@
   + Terus belajar tentang serangan dan pertahanan terbaru
 
 + SOC L1 adalah garda terdepan yang bertugas mendeteksi, menganalisis, dan membantu mencegah serangan agar perusahaan tetap aman
+
+## Security Operations Center (SOC)
++ SOC adalah tim besar dengan berbagai peran yang saling mendukung untuk menjaga keamanan perusahaan, dan L1 analyst tidak bekerja sendirian.
+
++ Peran dalam tim:
+  + Senior Analyst (Will) → membantu L1 dan menangani kasus kompleks
+  + SOC Engineer (Corey) → mengelola dan mengonfigurasi tools keamanan
+  + SOC Manager (Emily) → mengawasi operasional dan melaporkan ke manajemen
+  + Incident Responder (Daniel) → menangani insiden besar (on-demand)
+
++ Pengalaman yang akan didapat L1:
+  + Menangani malware/data stealer
+  + Menganalisis dan menghentikan phishing campaign
+  + Terlibat dalam insiden besar seperti ransomware attack
+  + Membantu membuat detection rules & automation
+  + Memahami cara kerja perusahaan secara keseluruhan
+
++ SOC adalah kerja tim, dan sebagai L1 akan membangun pengalaman untuk berkembang ke peran yang lebih advanced di cyber security
