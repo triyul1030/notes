@@ -16,3 +16,15 @@
 + CISO berperan penting sebagai penghubung antara bisnis dan keamanan. Mereka merancang struktur dan strategi keamanan yang sesuai dengan kebutuhan perusahaan
 
 + Struktur keamanan dibuat berlapis agar tujuan bisnis dan perlindungan sistem bisa berjalan seimbang dan efektif
+
+## Security Departments
++ Di perusahaan besar, keamanan siber dibagi ke beberapa tim khusus di bawah CISO, masing-masing dengan peran berbeda.
+
++ Struktur utamanya:
+  1. Red Team → fokus pada offensive security (pentester / ethical hacker) untuk mencari celah keamanan
+  2. GRC Team (Governance, Risk, Compliance) → mengelola kebijakan, risiko, dan kepatuhan (misalnya PCI DSS)
+  3. Blue Team → fokus pada defensive security (SOC analyst, engineer, incident responder) untuk melindungi sistem
+
++ Perusahaan kecil → biasanya ditangani oleh tim IT
++ Perusahaan menengah → ada tim Information Security umum
++ Di perusahaan besar, keamanan dibagi ke tim spesialis agar perlindungan lebih efektif dan terstruktur
