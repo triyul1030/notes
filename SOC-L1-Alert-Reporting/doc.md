@@ -47,5 +47,25 @@
 
 + Report yang baik membuat investigasi lebih cepat, terdokumentasi dengan baik, dan meningkatkan kualitas analisis SOC secara keseluruhan
 
+## Escalation Guide
++ Escalation dilakukan oleh L1 ke L2 jika alert membutuhkan penanganan lebih lanjut, analisis lebih dalam, atau bantuan tambahan.
++ Kapan perlu escalation:
+  + Indikasi serangan besar (butuh DFIR / investigasi lanjutan)
+  + Perlu remediation (hapus malware, isolasi host, reset password)
+  + Perlu komunikasi eksternal (customer, partner, manajemen, dll)
+  + L1 tidak yakin atau belum paham hasil analisis
+
++ Alur escalation:
+  + L1 melakukan analisis & menulis alert report
+  + Set verdict (misalnya True Positive)
+  + Assign alert ke L2
+  + L2 melanjutkan investigasi, validasi, dan penanganan
+
++ Tambahan:
+  + Tidak masalah bagi L1 untuk minta bantuan L2 jika ragu
+  + Lebih baik bertanya daripada salah menutup alert
+
++ Escalation memastikan alert yang serius atau tidak jelas ditangani oleh level yang lebih ahli agar tidak terjadi kesalahan atau ancaman terlewat
+
 ## Reference
 + [https://tryhackme.com/room/socl1alertreporting](https://tryhackme.com/room/socl1alertreporting)
