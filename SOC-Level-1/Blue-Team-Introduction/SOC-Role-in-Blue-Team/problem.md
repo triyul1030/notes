@@ -9,3 +9,9 @@
    **Defensive**
 2. Which department handles active or urgent cyber incidents?\
    **CIRT**
+
+### Advancing SOC Career
+1. How would you call a cyber security company providing SOC services?\
+   **MSSP**
+2. Which role naturally continues your SOC L1 analyst journey?\
+   **SOC L2 Analyst**
