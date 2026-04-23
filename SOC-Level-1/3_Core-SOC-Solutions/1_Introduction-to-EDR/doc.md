@@ -35,3 +35,6 @@
 
 ## Summary
 + EDR adalah solusi keamanan yang memantau, mendeteksi, dan merespons ancaman di endpoint, serta menjadi alat penting bagi SOC analyst. Materi mencakup cara kerja EDR, perbedaannya dengan antivirus, arsitektur, telemetry, serta kemampuan deteksi dan respons, dengan prasyarat pemahaman dasar tentang endpoint dan peran SOC.
+
+# Reference
++ https://tryhackme.com/room/introductiontoedrs
