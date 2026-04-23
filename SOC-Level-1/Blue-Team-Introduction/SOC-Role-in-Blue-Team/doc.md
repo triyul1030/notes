@@ -111,5 +111,103 @@
 #### Summary
 + Perusahaan besar dan organisasi teknologi membutuhkan peran keamanan yang sangat spesifik dalam Blue Team. Meskipun fokusnya sempit, peran ini memerlukan kombinasi keahlian mendalam dan pengalaman luas di bidang keamanan umum. Contohnya meliputi DevSecOps, AppSec Engineer, hingga AI Researcher, serta peran tambahan seperti Digital Forensics Analyst dan Threat Intelligence Analyst yang berfokus pada analisis ancaman dan investigasi.
 
+## Advancing SOC Career
+### SOC Path
+#### Cue
++ SOC L1 Analyst
++ red teaming
++ general it
++ ctf
++ cyber news
++ sal1 certification
++ wawancara
++ soc internal
++ mssp
++ job
++ junior
++ senior
+#### Notes
++ SOC L1 Analyst merupakan langkah permulaan yang berguna untuk mendalami dunia cyber
++ Cara memulai menjadi SOC L1 Analyst:
+  1. Pelajari dan praktikan skill inti SOC, bisa juga mempelajari skill red teaming atau general IT
+  2. proaktif, coba ctf, tetap update dalam cyber news, pertimbangkan [SAL1 certification](https://tryhackme.com/certification/security-analyst-level-1)
+  3. persiapan wawancara, pelajari perbedaan soc internal dan mssp, dan apply pekerjaan
+  4. setelah bekerja sebagai role junior, pertimbangkan untuk persiapan ke role senior
+#### Summary
++ ketika akan memulai soc l1 analyst, pertama pelajari skill inti soc, proaktif, persiapan wawancara, dan pertimbangkan role senior ketika sudah mendapatkan pekerjaan
+
+Berikut rangkuman dengan **metode Cornell** berdasarkan teks yang diberikan:
+
+### Internal SOC vs MSSP
+
+#### Cue
++ Internal SOC vs MSSP
++ Apa itu MSSP
++ Perbedaan utama
++ Lingkungan kerja
++ Pengalaman kerja
+
+#### Notes
++ Tidak semua organisasi memiliki keahlian untuk menjalankan SOC sendiri.
++ Mereka menggunakan **Managed Security Services Provider (MSSP)**, yaitu perusahaan yang menyediakan layanan keamanan secara outsourcing, paling umum adalah SOC.
++ Bekerja di MSSP:
+  + Tekanan kerja tinggi (high-pressure)
+  + Cocok untuk memulai karier dengan cepat (quickstart career)
+
++ Disarankan melamar posisi SOC apa pun sebagai pekerjaan pertama, sambil memahami perbedaannya.
+
++ Perbandingan Internal SOC vs MSSP
+  + Scenario Example
+    + Internal SOC: bekerja di tim SOC sebuah bank dan melindungi sistem bank
+    + MSSP: bekerja di MSSP global yang melindungi banyak klien (misalnya 60 pelanggan di Eropa)
+
+  + Working Pace
+    + Internal SOC: shift cenderung lebih tenang, tekanan waktu tidak terlalu tinggi
+    + MSSP: shift dimulai dengan banyak alert mendesak yang harus dianalisis
+  + Security Tools
+    + Internal SOC: menggunakan sedikit tools, tetapi harus sangat menguasainya
+    + MSSP: menggunakan banyak tools dan platform yang beragam
+  + Incident Practice
+    + Internal SOC: hanya menangani sedikit serangan besar (misalnya dua dalam setahun)
+    + MSSP: setiap minggu menghadapi serangan dan breach, sehingga banyak pembelajaran
+
+#### Summary
++ Internal SOC dan MSSP memiliki perbedaan utama pada beban kerja, variasi tools, dan pengalaman incident. Internal SOC cenderung lebih stabil dan fokus, sedangkan MSSP lebih cepat, penuh tekanan, dan memberikan lebih banyak pengalaman praktis. MSSP menjadi pilihan baik untuk memulai karier karena intensitas belajar yang tinggi.
+
+### Next Step
+#### Cue
++ Career path setelah L1
++ Pilihan role
++ Pengalaman awal karier
++ Tips bekerja di Blue Team
++ Cara belajar dari pekerjaan
+
+#### Notes
++ Langkah paling umum setelah **L1** adalah menjadi **SOC L2 analyst**, tetapi bisa memilih jalur lain.
++ Saat bekerja:
+  + Bisa tertarik ke engineering saat menangani SIEM alert
+  + Bisa tertarik ke **CIRT actions** saat terjadi cyber attack
+  + Bisa cocok menjadi manager dan berkembang menuju peran **CISO**
+
++ Fokus utama 1–2 tahun pertama:
+  + Mendapatkan pengalaman kerja nyata (real work experience)
+  + Menggunakan waktu tersebut secara efektif
+
++ Tips untuk Roles Supporting Blue Team
+  + Learn From Every Alert
+    + Memahami alasan rule terpicu untuk meningkatkan detection skills
+
+  + Think Like An Attacker
+    + Bertanya “kenapa attacker melakukan ini” sebelum menganalisis bagaimana caranya
+
+  + Verify Everything
+    + Tidak berasumsi, selalu validasi alert dan aktivitas mencurigakan di log
+
+  + Get Involved in Incidents
+    + Serangan nyata memberikan pelajaran yang tidak bisa didapat dari lab
+
+#### Summary
++ Setelah L1, jalur karier terbuka luas, mulai dari SOC L2 hingga spesialis atau manajemen. Dua tahun pertama penting untuk mengumpulkan pengalaman nyata. Untuk berkembang di Blue Team, penting belajar dari setiap alert, berpikir seperti attacker, selalu memverifikasi, dan terlibat langsung dalam incident karena pengalaman nyata memberikan pembelajaran terbaik.
+
 ## Reference
 + https://tryhackme.com/room/socroleinblueteam
