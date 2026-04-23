@@ -110,3 +110,6 @@
 + Peran-peran ini termasuk dalam supporting Blue Team roles
 #### Summary
 + Perusahaan besar dan organisasi teknologi membutuhkan peran keamanan yang sangat spesifik dalam Blue Team. Meskipun fokusnya sempit, peran ini memerlukan kombinasi keahlian mendalam dan pengalaman luas di bidang keamanan umum. Contohnya meliputi DevSecOps, AppSec Engineer, hingga AI Researcher, serta peran tambahan seperti Digital Forensics Analyst dan Threat Intelligence Analyst yang berfokus pada analisis ancaman dan investigasi.
+
+## Reference
++ https://tryhackme.com/room/socroleinblueteam
