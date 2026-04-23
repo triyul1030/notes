@@ -209,5 +209,48 @@ Berikut rangkuman dengan **metode Cornell** berdasarkan teks yang diberikan:
 #### Summary
 + Setelah L1, jalur karier terbuka luas, mulai dari SOC L2 hingga spesialis atau manajemen. Dua tahun pertama penting untuk mengumpulkan pengalaman nyata. Untuk berkembang di Blue Team, penting belajar dari setiap alert, berpikir seperti attacker, selalu memverifikasi, dan terlibat langsung dalam incident karena pengalaman nyata memberikan pembelajaran terbaik.
 
+## Final Chalenge
+### Cue
++ Challenge
++ Peran CISO
++ Tugas utama
++ Cara menyelesaikan challenge
++ Website instructions
+
+### Notes
++ Dalam tugas ini, berperan sebagai **CISO** di perusahaan **TrySecureMe**, sebuah perusahaan multinasional besar.
++ Bertanggung jawab mengawasi banyak departemen dan menangani insiden setiap bulan.
++ Kondisi challenge:
+  + Ada **tujuh insiden** terjadi secara bersamaan
+  + Harus memilih **orang/role yang tepat** untuk menangani tiap insiden
+  + Membutuhkan pemahaman tentang berbagai **security roles**
+
++ Website Instructions
+  + Klik **[View Site](https://static-labs.tryhackme.cloud/apps/soc-role-blue-team/)** untuk membuka website
+  + Disarankan membuka dalam full screen atau resize untuk tampilan lebih baik
+  + Tugas:
+    + Drag and drop role dari kiri ke insiden di kanan
+    + Jika semua pilihan benar → bisa claim flag dan menyelesaikan task
+    + Bisa mengulang dengan klik tombol **Reset** kapan saja
+    
++ Hasil Pemilihan Role
+  + SIEM created an alert about FW-NY-01 firewall brute-force. Who should triage the alert? → **Lucas | SOC L1 Analyst**
+
+  + The HR manager Anna launched a phishing malware. Who should make a deep analysis? → **Susan | SOC L2 Analyst**
+
+  + The office in France was somehow hit with ransomware. Immediate response is required! → **Robert | CERT Lead**
+
+  + Our servers storing the credit cards require PCI DSS audit. Who can help us here? → **Nick | GRC Auditor**
+
+  + Who can check the new version of tryhackme.thm for vulnerabilities? → **Ben | Penetration Tester**
+
+  + The SIEM is unavailable due to a storage limit. Who can investigate the issue? → **Eugen | SOC Engineer**
+
+  + FIN7 threat group actively targets our company. Who can analyze their tactics? → **Alice | Threat Researcher**
+
+### Summary
++ Challenge ini mensimulasikan peran CISO yang harus menangani beberapa insiden sekaligus dengan memilih security role yang tepat. Penyelesaian dilakukan melalui website interaktif dengan sistem drag-and-drop, dan keberhasilan bergantung pada pemahaman terhadap berbagai peran keamanan.
+
+
 ## Reference
 + https://tryhackme.com/room/socroleinblueteam

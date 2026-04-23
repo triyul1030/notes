@@ -15,3 +15,7 @@
    **MSSP**
 2. Which role naturally continues your SOC L1 analyst journey?\
    **SOC L2 Analyst**
+
+### Final Challenge
+1. What flag did you claim after completing the final challenge?\
+   **THM{trysecureme_is_secured!}**
