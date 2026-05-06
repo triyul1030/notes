@@ -105,6 +105,61 @@
 ## Summary
 + EDR adalah solusi keamanan endpoint yang dirancang untuk melindungi perangkat di mana saja, terutama karena meningkatnya remote work. EDR memiliki tiga pilar utama: visibility, detection, dan response, yang memungkinkan monitoring detail, deteksi ancaman lanjutan, dan tindakan langsung. Meskipun kuat, EDR hanya bekerja pada level host dan tidak mencakup ancaman jaringan.
 
+# Beyond the Antivirus
+
+## Cue
++ Perbedaan Antivirus (AV) vs EDR
++ Analogi airport (immigration vs security officers)
++ Kelemahan signature-based detection
++ Fungsi monitoring dan behaviour analysis
++ Visibility antar endpoint
++ Perbandingan respon AV vs EDR pada serangan
++ Tahapan serangan (phishing → payload → remote access)
+
+## Notes
++ AV dan EDR sama-sama melindungi endpoint, tetapi tingkat perlindungan berbeda
++ Analogi:
+  + AV = immigration check (cek passport vs database criminal)
+  + EDR = security officers (monitor CCTV & motion sensors)
++ AV hanya mendeteksi berdasarkan signature (known threats)
++ Threat baru atau yang belum terdaftar bisa lolos dari AV
++ EDR memonitor aktivitas dan behaviour secara terus-menerus
++ EDR dapat mendeteksi aktivitas mencurigakan walau lolos dari AV
++ EDR menyediakan organization-wide visibility (cek semua endpoint)
+
++ Scenario serangan:
+  1. Phishing email dengan Word + malicious macro (VBA)
+  2. User membuka file
+  3. Macro menjalankan PowerShell
+  4. PowerShell obfuscated download payload
+  5. Payload injection ke svchost.exe
+  6. Attacker mendapat remote access
+
++ Perbandingan respon:
+  + Step 1:
+    + AV: tidak deteksi jika tidak ada signature
+    + EDR: log download & monitor
+  + Step 2:
+    + AV: tidak deteksi (winword.exe legitimate)
+    + EDR: record execution & monitor
+  + Step 3:
+    + AV: tidak deteksi tanpa signature
+    + EDR: flag parent-child relation (winword.exe → PowerShell.exe)
+  + Step 4:
+    + AV: tidak deteksi obfuscated script
+    + EDR: flag script execution
+  + Step 5:
+    + AV: tidak monitor memory injection
+    + EDR: deteksi process injection (svchost.exe)
+  + Step 6:
+    + AV: tidak punya network visibility
+    + EDR: flag outbound connection abnormal
+  + Final:
+    + AV: bisa dianggap clean
+    + EDR: generate alert + full attack chain + response action
+
+## Summary
++ AV menggunakan signature-based detection sehingga terbatas pada known threats, sedangkan EDR memonitor behaviour, aktivitas, dan memberikan visibility menyeluruh, sehingga mampu mendeteksi dan merespon advanced threats yang lolos dari AV.
 
 # Reference
 + https://tryhackme.com/room/introductiontoedrs
