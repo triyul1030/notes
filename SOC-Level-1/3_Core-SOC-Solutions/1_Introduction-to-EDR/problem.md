@@ -24,3 +24,6 @@
 2. Where are the configuration settings of a Windows system primarily stored?\
    **registry**
 
+# Detection and Response Capabilities
+1. Which feature of the EDR helps you identify threats based on known malicious behaviours?\
+   **IOC Matching**

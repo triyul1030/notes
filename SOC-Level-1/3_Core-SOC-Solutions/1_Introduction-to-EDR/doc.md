@@ -275,5 +275,90 @@
 ## Summary
 * Telemetry adalah data aktivitas endpoint yang dikumpulkan oleh EDR agents, yang mencakup process, network, command, file, dan registry activity, dan digunakan dengan machine learning untuk mendeteksi advanced threats serta membantu analyst memahami dan merekonstruksi serangan secara menyeluruh.
 
+# Detection and Response Capabilities
+
+## Cue
+* Teknik detection pada EDR
+* Behavioral, Anomaly, IOC detection
+* MITRE ATT&CK mapping
+* Machine Learning dalam detection
+* Response EDR (automated & manual)
+* Isolate host, terminate process, quarantine
+* Remote access (RTR)
+* Artefacts collection
+
+## Notes
+* EDR menggunakan telemetry untuk melakukan advanced detection
+
+* Teknik detection:
+  * Behavioral Detection:
+    * Menganalisis behavior file, bukan hanya signature
+    * Deteksi penggunaan legitimate processes untuk serangan
+    * Contoh: winword.exe spawn PowerShell.exe (unusual parent-child)
+
+  * Anomaly Detection:
+    * EDR memahami baseline behavior endpoint
+    * Aktivitas yang menyimpang akan di-flag
+    * Bisa menghasilkan false positives
+    * Contoh: proses modify auto-start registry key (tidak umum)
+
+  * IOC Matching:
+    * Menggunakan threat intelligence feeds
+    * Mencocokkan aktivitas dengan known IOC
+    * Tidak berlaku untuk zero-day attacks
+    * Contoh: hash executable cocok dengan database → langsung di-flag
+
+  * MITRE ATT&CK Mapping:
+    * Aktivitas dipetakan ke Tactic dan Technique
+    * Membantu analyst memahami tahap serangan
+
+    * Contoh:
+      * Tactic: Persistence
+      * Technique: Scheduled Task/Job
+
+  * Machine Learning Algorithms:
+    * Model dilatih dari data normal & malicious
+    * Mendeteksi pola kompleks
+    * Cocok untuk fileless attacks & multi-staged intrusions
+    * Aktivitas individual terlihat normal, tapi chain terdeteksi malicious
+
+* Response:
+  * EDR menyediakan automated dan manual response
+
+  * Isolate Host:
+    * Memutus endpoint dari network
+    * Mencegah lateral movement
+    * Efektif untuk containment
+
+  * Terminate Process:
+    * Menghentikan proses malicious
+    * Digunakan jika isolasi tidak memungkinkan
+    * Harus hati-hati (bisa ganggu proses legitimate)
+
+  * Quarantine:
+    * Memindahkan file ke lokasi terisolasi
+    * File tidak bisa dieksekusi
+    * Bisa direview atau dihapus permanen
+
+  * Remote Access:
+    * Akses shell endpoint dari jarak jauh
+    * Digunakan jika response bawaan tidak cukup
+    * Bisa menjalankan command, script, ambil data
+
+  * Artefacts Collection:
+    * Mengambil data untuk forensic & legal
+    * Tanpa akses fisik ke endpoint
+
+    * Contoh:
+      * Memory Dump
+      * Event Logs
+      * Folder Contents
+      * Registry Hives
+
+* EDR memiliki detection dan response lebih advanced dibanding endpoint protection tradisional
+
+## Summary
+* EDR menggunakan berbagai teknik seperti behavioral, anomaly, IOC matching, MITRE ATT&CK mapping, dan machine learning untuk mendeteksi ancaman, serta menyediakan berbagai response seperti isolasi host, terminate process, quarantine, remote access, dan artefacts collection untuk menangani serangan secara efektif.
+
 # Reference
 + https://tryhackme.com/room/introductiontoedrs
