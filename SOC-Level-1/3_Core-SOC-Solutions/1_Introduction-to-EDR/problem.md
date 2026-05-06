@@ -11,3 +11,9 @@
    **svchost.exe**
 3. Which security solution might mark this activity as clean?\
    **Antivirus**
+
+# How an EDR Works
+1. Which component of the EDR is responsible for collecting telemetry from the endpoints?\
+   **Agent**
+2. An EDR agent is also known as a?\
+   **sensor**

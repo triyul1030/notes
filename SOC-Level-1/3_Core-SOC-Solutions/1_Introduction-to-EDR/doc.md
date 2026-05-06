@@ -161,5 +161,64 @@
 ## Summary
 + AV menggunakan signature-based detection sehingga terbatas pada known threats, sedangkan EDR memonitor behaviour, aktivitas, dan memberikan visibility menyeluruh, sehingga mampu mendeteksi dan merespon advanced threats yang lolos dari AV.
 
+# How an EDR Works
+
+## Cue
+* Cara kerja EDR (Agents & Console)
+* Fungsi EDR Agents (sensors)
+* Fungsi EDR Console (analysis & correlation)
+* Penggunaan machine learning & threat intelligence
+* Proses setelah detection (alert & SOC analyst)
+* Severity level (Critical → Informational)
+* Investigasi alert (file, process, network, registry)
+* True positive vs false positive
+* Integrasi EDR dengan tools lain (SIEM, Firewall, DLP, dll)
+
+## Notes
+* EDR memberikan visibility melalui kombinasi agents dan console
+
+* EDR Agents:
+  * Di-deploy di endpoint (disebut juga sensors)
+  * Berfungsi sebagai eyes and ears dari EDR
+  * Memonitor semua aktivitas endpoint
+  * Mengirim data aktivitas ke EDR Console secara real-time
+  * Dapat melakukan basic signature-based dan behavior-based detection
+  * Mengirim hasil deteksi ke console untuk trigger alert
+
+* EDR Console:
+  * Menerima data dari semua agents
+  * Data dianalisis dan dikorelasikan
+  * Menggunakan machine learning algorithms dan threat intelligence
+  * Bertindak sebagai “brain” yang menghubungkan semua data
+  * Menghasilkan detection (alert)
+  * Menyediakan dashboard untuk melihat status semua endpoint
+
+* Setelah detection:
+  * SOC analyst acknowledge dan prioritasi alert
+  * EDR memberi severity: Critical, High, Medium, Low, Informational
+  * Alert dengan severity tertinggi diprioritaskan
+  * Analyst dapat melihat detail:
+    * file execution
+    * process execution
+    * network connections
+    * registry modifications
+  * Analyst menentukan:
+    * false positive atau true positive
+  * Jika true positive, analyst dapat mengambil action dari EDR console
+
+* EDR dengan tools lain:
+  * EDR bukan satu-satunya solusi keamanan
+  * Bekerja bersama:
+    * Firewalls
+    * DLPs
+    * Email Security Gateways
+    * IAMs
+    * dll
+  * Semua solusi terintegrasi dengan SIEM
+  * SIEM menjadi central point of investigation
+
+## Summary
+* EDR bekerja menggunakan agents yang mengumpulkan data aktivitas endpoint dan console yang menganalisis data menggunakan machine learning dan threat intelligence untuk menghasilkan alert, yang kemudian diinvestigasi dan ditindaklanjuti oleh SOC analyst serta terintegrasi dengan sistem keamanan lain melalui SIEM.
+
 # Reference
 + https://tryhackme.com/room/introductiontoedrs
