@@ -360,5 +360,38 @@
 ## Summary
 * EDR menggunakan berbagai teknik seperti behavioral, anomaly, IOC matching, MITRE ATT&CK mapping, dan machine learning untuk mendeteksi ancaman, serta menyediakan berbagai response seperti isolasi host, terminate process, quarantine, remote access, dan artefacts collection untuk menangani serangan secara efektif.
 
+# Investigate an Alert on EDR
+
+## Cue
+* Scenario SOC analyst di TECH THM
+* Akses ke EDR console
+* Multiple detections (medium & high severity)
+* Tugas: triage detection
+* Gunakan informasi dari EDR
+* Akses EDR Dashboard (View Site / URL)
+* Fokus pada visibility detection
+* Tidak termasuk acknowledgement & action
+
+## Notes
+* Role: SOC analyst di TECH THM
+* Memiliki akses ke EDR console
+* Terdapat beberapa detection dengan severity medium dan high
+
+* Tugas:
+  * Melakukan triage pada setiap detection
+  * Menggunakan informasi yang tersedia di EDR
+  * Menjawab pertanyaan terkait detection
+
+* Akses:
+  * Menggunakan tombol “View Site” untuk membuka static site
+  * Alternatif: buka melalui URL “[EDR Dashboard](https://static-labs.tryhackme.cloud/apps/endpoint-detection-response/#)” (full screen)
+
+* Scope
+  * Fokus pada pemahaman visibility dari detection di EDR
+  * Acknowledgement dan action tidak termasuk dalam scope
+
+## Summary
+* Scenario ini menempatkan SOC analyst untuk melakukan triage terhadap beberapa detection di EDR dengan fokus pada analisis visibility informasi yang tersedia, tanpa melakukan tindakan lanjutan.
+
 # Reference
 + https://tryhackme.com/room/introductiontoedrs

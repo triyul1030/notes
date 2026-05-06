@@ -27,3 +27,15 @@
 # Detection and Response Capabilities
 1. Which feature of the EDR helps you identify threats based on known malicious behaviours?\
    **IOC Matching**
+
+# Investigate an Alert on EDR
+1. Which tool was launched by CMD.exe to download the payload on DESKTOP-HR01?\
+   **CURL.exe**
+2. What is the absolute path to the downloaded malware on the DESKTOP-HR01 machine?\
+   **C:\Users\Public\install.exe**
+3. What is the absolute path to the suspicious syncsvc.exe on the WIN-ENG-LAPTOP03 machine?\
+   **C:\Users\haris.khan\AppData\Local\Temp\syncsvc.exe**
+4. On which URL was the exfiltration attempt being made on WIN-ENG-LAPTOP03?\
+   **https://files-wetransfer.com/upload/session/ab12cd34ef56/dump_2025.dmp**
+5. What was UpdateAgent.exe labelled by Threat Intel on DESKTOP-DEV01?\
+   **Known internal IT utility tool**
