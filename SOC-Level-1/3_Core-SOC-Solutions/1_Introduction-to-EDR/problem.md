@@ -17,3 +17,10 @@
    **Agent**
 2. An EDR agent is also known as a?\
    **sensor**
+
+# EDR Telemetry
+1. Which telemetry data helps in detecting C2 communications?\
+   **Network Connections**
+2. Where are the configuration settings of a Windows system primarily stored?\
+   **registry**
+

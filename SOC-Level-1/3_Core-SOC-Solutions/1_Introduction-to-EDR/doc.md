@@ -220,5 +220,60 @@
 ## Summary
 * EDR bekerja menggunakan agents yang mengumpulkan data aktivitas endpoint dan console yang menganalisis data menggunakan machine learning dan threat intelligence untuk menghasilkan alert, yang kemudian diinvestigasi dan ditindaklanjuti oleh SOC analyst serta terintegrasi dengan sistem keamanan lain melalui SIEM.
 
+# EDR Telemetry
+
+## Cue
+* Pengertian Telemetry
+* Peran telemetry dalam EDR
+* Jenis data yang dikumpulkan
+* Process, Network, Command, File, Registry activity
+* Kesulitan membedakan aktivitas normal vs malicious
+* Peran machine learning & analysis
+* Fungsi telemetry dalam detection & investigation
+
+## Notes
+* Telemetry adalah data yang dikumpulkan oleh EDR agents dari endpoint
+* Disebut sebagai “black box” endpoint untuk detection dan investigation
+* EDR mengumpulkan banyak data karena sulit membedakan aktivitas normal dan malicious
+* Semakin banyak data → semakin baik analisis
+
+* Jenis telemetry:
+  * Process Executions and Terminations:
+    * Melacak semua proses (running & idle)
+    * Identifikasi parent-child relationship mencurigakan
+    * Deteksi suspicious executables dan malware payload
+
+  * Network Connections:
+    * Monitor semua koneksi jaringan
+    * Identifikasi koneksi ke C2 server
+    * Deteksi unusual port usage, data exfiltration, lateral movement
+
+  * Command Line Activity:
+    * Mencatat command di CMD, PowerShell, dll
+    * Identifikasi malicious command & obfuscated PowerShell scripts
+
+  * Files and Folders Modifications:
+    * Melacak perubahan file/folder
+    * Digunakan dalam data staging, ransomware, malicious file dropping
+
+  * Registry Modifications:
+    * Monitor perubahan registry Windows
+    * Registry berisi konfigurasi penting sistem
+    * Banyak perubahan terjadi saat aktivitas malicious
+
+* EDR menggunakan complex logic dan machine learning algorithms untuk analisis
+* Advanced threats sering menggunakan legitimate utilities (stealthy)
+* Aktivitas terlihat normal jika dilihat satu per satu
+
+* Dengan telemetry detail:
+  * Aktivitas dapat dianalisis secara keseluruhan
+  * Membantu detection advanced threats
+  * Membantu analyst dalam investigation
+  * Menentukan root cause
+  * Mereconstruct attack timeline
+
+## Summary
+* Telemetry adalah data aktivitas endpoint yang dikumpulkan oleh EDR agents, yang mencakup process, network, command, file, dan registry activity, dan digunakan dengan machine learning untuk mendeteksi advanced threats serta membantu analyst memahami dan merekonstruksi serangan secara menyeluruh.
+
 # Reference
 + https://tryhackme.com/room/introductiontoedrs
