@@ -1,6 +1,7 @@
 # Introduction
 
 ## Cue
+
 * Pengertian SIEM
 * Peran SIEM di SOC
 * Konsep log dalam network
@@ -31,4 +32,5 @@
   * Memahami proses alerting dan analisis alert
 
 ## Summary
+
 * SIEM adalah solusi utama di SOC yang digunakan untuk mengelola dan menganalisis logs dari berbagai perangkat secara terpusat melalui proses collect, normalize, dan correlate, guna mendukung detection dan alert analysis.
