@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <p id="demo"></p>
+      
+    <script>
+      const person = {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50
+      };
+
+      // Destructuring
+      let {firstName, lastName, age, country = "Norway"} = person;
+
+      // Access country:
+      document.getElementById("demo").innerHTML = country;
+    </script>
+
+  </body>
+</html>

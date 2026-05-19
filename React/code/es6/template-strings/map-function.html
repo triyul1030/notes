@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h1>Example</h1>
+
+    <p>You can use the Array.map() function inside a template string:</p>
+
+    <div id="demo"></div>
+
+    <script>
+      const items = ["apple", "banana", "orange"];
+      const list = `You have ${items.length} items:
+        ${items.map(item => `- ${item}`).join('\n')}`;
+
+      document.getElementById("demo").innerHTML = list;
+    </script>
+
+  </body>
+</html>
