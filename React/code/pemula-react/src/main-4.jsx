@@ -14,7 +14,7 @@ const myelement = (
   </table>
 );
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('sandy')).render(
   // <h1>Hello React!</h1>
   <p>Welcome!</p>
   // myelement
