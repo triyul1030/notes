@@ -1,36 +1,120 @@
-# Introduction
+# Logs Everywhere, Answer Nowhere
 
 ## Cue
 
-* Pengertian SIEM
-* Peran SIEM di SOC
-* Konsep log dalam network
-* Kebutuhan centralized solution
-* Fungsi collect, normalize, correlate
-* Learning objectives (log sources, SIEM features, alerting)
+* Log sources dalam network
+* Host-centric log sources
+* Network-centric log sources
+* Contoh host logs
+* Contoh network logs
+* Challenges analisis logs
+* No centralization
+* Limited context
+* Limited analysis
+* Format issues
 
 ## Notes
 
-* Security Information and Event Management (SIEM) adalah core security solution di SOC
-* Digunakan oleh SOC analyst dalam security operations center
+* Banyak device dalam network saling berkomunikasi:
 
-* Dalam network:
-  * Berbagai device menghasilkan logs
-  * Logs perlu dikumpulkan dan dianalisis
+  * endpoint Linux/Windows
+  * data server
+  * website
+  * router
 
-* Pentingnya centralized solution:
-  * Mengumpulkan logs (collect)
-  * Menormalkan data (normalize)
-  * Menghubungkan data (correlate)
+* Device terus menghasilkan logs aktivitas
 
-* Learning Objectives:
-  * Memahami berbagai jenis log sources
-  * Mengidentifikasi keterbatasan isolated logs
-  * Memahami pentingnya SIEM
-  * Mengetahui fitur SIEM
-  * Mempelajari ingestion log ke SIEM
-  * Memahami proses alerting dan analisis alert
+* Device penghasil log disebut:
+
+  ```text
+  log sources
+  ```
+
+* Logs membantu:
+
+  * identifikasi malicious activity
+  * troubleshooting
+
+* Log sources dibagi menjadi 2 kategori:
+
+  * Host-Centric
+  * Network-Centric
+
+* Host-Centric Log Sources:
+
+  * menangkap event di dalam host
+  * contoh device:
+
+    * Windows
+    * Linux
+    * servers
+
+* Contoh host-centric logs:
+
+  * user accessing file
+  * authentication attempts
+  * process execution
+  * registry modification
+  * PowerShell execution
+
+* Network-Centric Log Sources:
+
+  * menangkap aktivitas komunikasi network
+  * contoh device:
+
+    * firewalls
+    * IDS/IPS
+    * routers
+
+* Contoh network-centric logs:
+
+  * SSH connection
+  * FTP file access
+  * web traffic
+  * VPN access
+  * network file sharing
+
+* Challenges analisis logs:
+
+  * Numerous Log Sources:
+
+    * network memiliki banyak log sources
+    * menghasilkan ratusan event per detik
+    * logs tersebar di banyak device
+    * analisis satu per satu sangat sulit
+
+  * No Centralization:
+
+    * logs tersimpan di masing-masing machine
+    * perlu akses:
+
+      ```text
+      SSH
+      RDP
+      ```
+
+    * analisis menjadi tidak efisien
+
+  * Limited Context:
+
+    * individual log tidak memberi gambaran lengkap
+    * correlation antar logs dapat menunjukkan malicious activity
+    * contoh:
+
+      * file access terlihat normal
+      * tetapi ternyata hasil lateral movement
+
+  * Limited Analysis:
+
+    * jumlah logs sangat banyak
+    * analisis manual hampir tidak mungkin
+    * analyst dapat melewatkan logs penting
+
+  * Format Issues:
+
+    * tiap log source memiliki format berbeda
+    * analyst harus memahami banyak format log
 
 ## Summary
 
-* SIEM adalah solusi utama di SOC yang digunakan untuk mengelola dan menganalisis logs dari berbagai perangkat secara terpusat melalui proses collect, normalize, dan correlate, guna mendukung detection dan alert analysis.
+* Network menghasilkan banyak host-centric dan network-centric logs yang penting untuk investigasi dan troubleshooting, tetapi analisis manual menghadapi masalah seperti banyaknya log sources, tidak adanya centralization, limited context, jumlah log yang besar, dan perbedaan format log.
